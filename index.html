@@ -1,69 +1,61 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>午后阳光 - 温馨治愈页面</title>
+    <title>Afternoon Sun - Cozy & Calming</title>
     <style>
-        /* 基础设置：燕麦色背景，柔和不刺眼 */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
-            background-color: #FAF9F6; /* 非常柔和的燕麦奶油色，保护视力 */
+            background-color: #FAF9F6; 
             overflow: hidden;
-            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", serif;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #5C4D42; /* 文字使用暖棕色代替纯黑色 */
+            color: #5C4D42; 
         }
-
-        /* 模拟午后阳光的柔和光晕 */
         .sunlight {
             position: absolute;
             border-radius: 50%;
-            filter: blur(80px); /* 极度柔和的边缘 */
+            filter: blur(80px); 
             opacity: 0.6;
             z-index: 1;
             animation: float 12s infinite alternate ease-in-out;
         }
-
         .light-peach {
             width: 400px;
             height: 400px;
-            background: #FFE5D9; /* 极淡的蜜桃暖粉色 */
+            background: #FFE5D9; 
             top: -10%;
             left: 10%;
         }
-
         .light-yellow {
             width: 500px;
             height: 500px;
-            background: #FFF1E6; /* 淡淡的暖黄色 */
+            background: #FFF1E6; 
             bottom: -15%;
             right: 5%;
             animation-delay: -5s;
         }
-
-        /* 光晕缓慢浮动动画 */
         @keyframes float {
             0% { transform: translate(0, 0) scale(1); }
             100% { transform: translate(30px, 40px) scale(1.1); }
         }
 
-        /* 奶茶风卡片 */
+        /* Glassmorphism card */
         .card {
             position: relative;
             z-index: 10;
-            background: rgba(255, 255, 255, 0.6); /* 半透明奶白色 */
+            background: rgba(255, 255, 255, 0.6); 
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.9); /* 白色高光描边 */
-            border-radius: 30px; /* 大圆角显得更圆润可爱 */
+            border: 1px solid rgba(255, 255, 255, 0.9); 
+            border-radius: 30px; 
             padding: 60px 80px;
             text-align: center;
-            /* 重点：阴影也换成了暖棕色，彻底杜绝黑色 */
             box-shadow: 0 15px 35px rgba(139, 115, 85, 0.08); 
             transition: transform 0.4s ease, box-shadow 0.4s ease;
         }
@@ -72,40 +64,37 @@
             transform: translateY(-5px);
             box-shadow: 0 20px 45px rgba(139, 115, 85, 0.12);
         }
-
-        /* 温馨排版 */
         h1 {
             margin: 0 0 15px 0;
             font-size: 2.8rem;
             font-weight: 500;
-            color: #4A3F35; /* 深暖棕，不刺眼且清晰 */
-            letter-spacing: 4px;
+            color: #4A3F35; 
+            letter-spacing: 2px;
         }
-
         p {
-            color: #8D7B68; /* 浅咖色副标题 */
+            color: #8D7B68; 
             font-size: 1.15rem;
             margin-bottom: 40px;
             letter-spacing: 1px;
             line-height: 1.6;
         }
-
-        /* 焦糖色圆润按钮 */
         .btn {
             display: inline-block;
             padding: 14px 40px;
             font-size: 1.05rem;
             color: #FAF9F6;
-            background: #D4A373; /* 温暖的焦糖色/原木色 */
-            border-radius: 40px; /* 胶囊形状 */
+            background: #D4A373; 
+            border-radius: 40px; 
             text-decoration: none;
             transition: all 0.3s ease;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             box-shadow: 0 8px 20px rgba(212, 163, 115, 0.3);
+            font-weight: bold;
+            cursor: pointer; 
         }
 
         .btn:hover {
-            background: #C89564; /* 鼠标悬停加深一点点 */
+            background: #C89564; 
             transform: scale(1.03);
             box-shadow: 0 10px 25px rgba(212, 163, 115, 0.4);
         }
@@ -117,9 +106,9 @@
     <div class="sunlight light-yellow"></div>
 
     <div class="card">
-        <h1>岁月静好</h1>
-        <p>一杯热茶，一本好书<br>享受属于你的温暖午后</p>
-        <a href="#" class="btn">享受宁静</a>
+        <h1>Peaceful Moments</h1>
+        <p>A warm cup of tea, a good book.<br>Enjoy your cozy afternoon.</p>
+        <a href="javascript:void(0);" class="btn">Embrace Peace</a>
     </div>
 
 </body>
